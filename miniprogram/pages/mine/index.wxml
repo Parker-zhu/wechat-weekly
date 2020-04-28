@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 我的收藏 -->
+  <view class="uploader">
+    <view class="uploader-text" bindtap="doUpload">
+      <text>我的收藏</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl}}">
+      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+    </view>
+  </view>
+
+
+  <!-- 订阅管理 -->
+  <view class="uploader">
+    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
+      <text>订阅管理</text>
+    </navigator>
+  </view>
+
+  <!-- 关于我们 -->
+  <view class="uploader">
+    <navigator url="../im/im" open-type="navigate" class="uploader-text">
+      <text>关于我们</text>
+    </navigator>
+  </view>
+
+  <!-- 意见反馈 -->
+  <view class="uploader">
+    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
+      <text>意见反馈</text>
+    </navigator>
+  </view>
+
+
+</view>
